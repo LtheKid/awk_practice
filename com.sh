@@ -1,2 +1,1 @@
-BEGIN{print "n1,n2,n3"}
-NR > 1 {print}
+awk -F'[-,|]' -f preprocess.awk temp.csv
